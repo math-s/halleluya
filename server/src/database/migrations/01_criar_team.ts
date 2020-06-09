@@ -4,6 +4,7 @@ export async function up(knex: Knex){
   return knex.schema.createTable('team', table => {
     table.increments('id').primary();
     table.integer('lider').references('id').inTable('person').notNullable().onDelete('cascade');
+    table.string('nome').notNullable();
   })
 }
 
