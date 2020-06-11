@@ -1,5 +1,13 @@
-tabelas:
-  Usuários
-  CNPJ's
-  Produtos
-  Grupos e Impostos
+
+│   ├── database
+│   │   ├── connection.ts
+│   │   ├── database.sqlite
+│   │   ├── migrations
+│   │   │   ├── 00_criar_person.ts
+│   │   │   ├── 01_criar_team.ts
+│   │   │   ├── 02_criar_event.ts
+│   │   │   ├── 03_criar_team_event_relation.ts
+│   │   │   └── 04_criar_person_team_relation.ts
+│   │   └── text
+│   ├── routes.ts
+│   └── server.ts
